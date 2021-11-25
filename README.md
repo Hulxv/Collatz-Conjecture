@@ -4,10 +4,7 @@
 
 <p align='center'>
 
-<a href='https://youtu.be/094y1Z2wpJg'>
-<img src='https://img.youtube.com/vi/094y1Z2wpJg/0.jpg'>
-<h5 style='text-align:center'>Video on Youtube</h5>
-</a>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/094y1Z2wpJg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </p>
 
 ## Usage
