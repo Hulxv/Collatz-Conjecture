@@ -1,4 +1,4 @@
-## What is Collatz Conjecture ?
+# What is Collatz Conjecture?
 
 ---
 
