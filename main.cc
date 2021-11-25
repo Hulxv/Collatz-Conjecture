@@ -62,6 +62,8 @@ int main(int argc, char **argv)
     a.computing(START);
     cout << "Computing end.\n";
 
+    cout << "-------- Result --------\n\n";
+
     for (auto i = 0; i < argc; i++)
         if (strcmp(argv[i], "-p") == 0 || strcmp(argv[i], "--print") == 0)
         {
@@ -69,10 +71,9 @@ int main(int argc, char **argv)
                 cout << i << endl;
             break;
         }
-    cout << "-------- Result --------\n";
 
     cout
-        << "Evens: " << a.evenNums << endl;
+        << "\nEvens: " << a.evenNums << endl;
     cout << "Odds: " << a.oddNums << endl;
     cout << "All: " << a.oddNums + a.evenNums << endl;
 }

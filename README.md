@@ -20,11 +20,13 @@ $ ./CC [NUMBER] [OPTIONS]
 $ ./CC 100 -p # -p to print the list of numbers
 ```
 
-#### Output
+### Output
 
 ```terminal
 Computing start...
 Computing end.
+-------- Result --------
+
 100
 50
 25
@@ -51,7 +53,7 @@ Computing end.
 4
 2
 1
--------- Result --------
+
 Evens: 18
 Odds: 8
 All: 26
