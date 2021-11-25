@@ -15,13 +15,14 @@
 ```terminal
 $ make # To compile
 $ ./CC [NUMBER] [OPTIONS]
+```
 
-# Example:
+### Example
+```terminal
 $ ./CC 100 -p # -p to print the list of numbers
 ```
 
-#### Output
-
+### Output
 ```terminal
 Computing start...
 Computing end.
