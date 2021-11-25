@@ -1,7 +1,5 @@
 # What is Collatz Conjecture?
 
----
-
 <p align='center'>
 
 <a href='https://youtu.be/094y1Z2wpJg'>
@@ -15,8 +13,11 @@
 ```terminal
 $ make # To compile
 $ ./CC [NUMBER] [OPTIONS]
+```
 
-# Example:
+### Example
+
+```terminal
 $ ./CC 100 -p # -p to print the list of numbers
 ```
 
