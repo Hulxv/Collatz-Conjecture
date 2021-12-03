@@ -10,23 +10,44 @@ public:
     vector<mpz_class> list;
     mpz_class evenNums = 0;
     mpz_class oddNums = 0;
-    Collatz() {}
-
-    mpz_class computing(mpz_class n)
+    mpz_class N;
+    Collatz(string NUM)
     {
-        list.push_back(n);
-        if (n <= 1)
+        this->N = NUM;
+    }
+
+    mpz_class computing()
+    {
+        list.push_back(this->N);
+        if (this->N <= 1)
         {
             this->oddNums++;
             return 0;
         }
-        if (n % 2 == 0)
+        if (this->N % 2 == 0)
         {
             this->evenNums++;
-            return computing(n / 2);
+            return computing((this->N / 2));
         }
         this->oddNums++;
-        return computing(3 * n + 1);
+        return computing((3 * this->N + 1));
+    }
+
+    mpz_class computing(mpz_class N)
+    {
+        list.push_back(N);
+        if (N <= 1)
+        {
+            this->oddNums++;
+            return 0;
+        }
+        if (N % 2 == 0)
+        {
+            this->evenNums++;
+            return computing((N / 2));
+        }
+        this->oddNums++;
+        return computing((3 * N + 1));
     }
     ~Collatz() {}
 };
@@ -56,10 +77,9 @@ int main(int argc, char **argv)
         return 0;
     }
 
-    Collatz a;
-    mpz_class START(argv[1]);
+    Collatz a(argv[1]);
     cout << "Computing start...\n";
-    a.computing(START);
+    a.computing();
     cout << "Computing end.\n";
 
     cout << "-------- Result --------\n\n";

@@ -12,6 +12,9 @@
 
 ```terminal
 $ make # To compile
+Compiling...
+done.
+
 $ ./CC [NUMBER] [OPTIONS]
 ```
 
